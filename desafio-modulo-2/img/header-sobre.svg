@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracao da equipe multidisciplinar da clinica">
+ <defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#eaf7fb"/><stop offset="1" stop-color="#cbe7f1"/>
+  </linearGradient>
+ </defs>
+ <rect width="1020" height="220" fill="url(#bg)"/>
+
+ <rect x="0" y="168" width="1020" height="52" fill="#b3d9e6"/>
+ <circle cx="510" cy="96" r="132" fill="#dff1f7"/>
+
+ <g transform="translate(360,0)">
+  <circle cx="0" cy="70" r="27" fill="#f0c9a4"/>
+  <path d="M-27 66a27 27 0 0 1 54 0v-8a27 27 0 0 0-54 0z" fill="#43342b"/>
+  <path d="M-52 220c0-86 24-124 52-124s52 38 52 124z" fill="#ffffff"/>
+  <path d="M-16 100h32l-16 34z" fill="#9dc9d8"/>
+  <rect x="18" y="146" width="21" height="27" rx="3" fill="#2fb37a"/>
+ </g>
+ <g transform="translate(510,0)">
+  <circle cx="0" cy="70" r="27" fill="#c98d63"/>
+  <path d="M-27 66a27 27 0 0 1 54 0v-8a27 27 0 0 0-54 0z" fill="#221a16"/>
+  <path d="M-52 220c0-86 24-124 52-124s52 38 52 124z" fill="#e8f6fa"/>
+  <path d="M-16 100h32l-16 34z" fill="#9dc9d8"/>
+  <rect x="18" y="146" width="21" height="27" rx="3" fill="#1b98b8"/>
+ </g>
+ <g transform="translate(660,0)">
+  <circle cx="0" cy="70" r="27" fill="#f5d9bd"/>
+  <path d="M-27 66a27 27 0 0 1 54 0v-8a27 27 0 0 0-54 0z" fill="#8a5a2b"/>
+  <path d="M-52 220c0-86 24-124 52-124s52 38 52 124z" fill="#ffffff"/>
+  <path d="M-16 100h32l-16 34z" fill="#9dc9d8"/>
+  <rect x="18" y="146" width="21" height="27" rx="3" fill="#2aa8c4"/>
+ </g>
+ <path d="M116 78h26v20h20v26h-20v20h-26v-20H96V98h20z" fill="#2fb37a" opacity=".65"/>
+ <path d="M866 90h22v17h17v22h-17v17h-22v-17h-17v-22h17z" fill="#1b98b8" opacity=".55"/>
+</svg>

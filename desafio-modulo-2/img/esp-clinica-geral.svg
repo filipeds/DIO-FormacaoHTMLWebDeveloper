@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Icone de estetoscopio"><circle cx="120" cy="120" r="120" fill="#dff1f7"/>
+ <path d="M78 52v46a42 42 0 0 0 84 0V52" fill="none" stroke="#0b4f6c" stroke-width="13" stroke-linecap="round"/>
+ <circle cx="78" cy="48" r="12" fill="#0b4f6c"/><circle cx="162" cy="48" r="12" fill="#0b4f6c"/>
+ <path d="M120 140v22a34 34 0 0 0 68 0v-14" fill="none" stroke="#1b98b8" stroke-width="13" stroke-linecap="round"/>
+ <circle cx="188" cy="132" r="20" fill="#2fb37a"/><circle cx="188" cy="132" r="8" fill="#ffffff"/>
+</svg>

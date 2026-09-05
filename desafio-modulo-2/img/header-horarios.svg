@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracao de relogio e agenda de atendimento">
+ <defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#eaf7fb"/><stop offset="1" stop-color="#cbe7f1"/>
+  </linearGradient>
+ </defs>
+ <rect width="1020" height="220" fill="url(#bg)"/>
+
+ <rect x="0" y="168" width="1020" height="52" fill="#b3d9e6"/>
+ <rect x="120" y="42" width="220" height="150" rx="12" fill="#ffffff" stroke="#12657f" stroke-width="5"/>
+ <rect x="120" y="42" width="220" height="34" rx="12" fill="#12657f"/>
+ <rect x="152" y="30" width="12" height="28" rx="6" fill="#0b4f6c"/>
+ <rect x="296" y="30" width="12" height="28" rx="6" fill="#0b4f6c"/>
+ <g fill="#cbe7f1">
+  <rect x="140" y="90" width="38" height="26" rx="4"/><rect x="188" y="90" width="38" height="26" rx="4"/>
+  <rect x="236" y="90" width="38" height="26" rx="4"/><rect x="284" y="90" width="38" height="26" rx="4"/>
+  <rect x="140" y="124" width="38" height="26" rx="4"/><rect x="236" y="124" width="38" height="26" rx="4"/>
+  <rect x="284" y="124" width="38" height="26" rx="4"/><rect x="140" y="158" width="38" height="26" rx="4"/>
+ </g>
+ <rect x="188" y="124" width="38" height="26" rx="4" fill="#2fb37a"/>
+ <rect x="188" y="158" width="86" height="26" rx="4" fill="#2aa8c4"/>
+ <circle cx="530" cy="110" r="82" fill="#ffffff" stroke="#12657f" stroke-width="8"/>
+ <circle cx="530" cy="110" r="66" fill="#eaf7fb"/>
+ <g stroke="#0b4f6c" stroke-width="5" stroke-linecap="round">
+  <line x1="530" y1="110" x2="530" y2="66"/><line x1="530" y1="110" x2="562" y2="126"/>
+ </g>
+ <circle cx="530" cy="110" r="7" fill="#2fb37a"/>
+ <g fill="#12657f">
+  <rect x="526" y="40" width="8" height="14" rx="4"/><rect x="586" y="106" width="14" height="8" rx="4"/>
+  <rect x="526" y="166" width="8" height="14" rx="4"/><rect x="460" y="106" width="14" height="8" rx="4"/>
+ </g>
+ <g>
+  <rect x="680" y="52" width="230" height="24" rx="12" fill="#1b98b8"/>
+  <rect x="680" y="90" width="200" height="24" rx="12" fill="#2aa8c4" opacity=".8"/>
+  <rect x="680" y="128" width="230" height="24" rx="12" fill="#2aa8c4" opacity=".6"/>
+  <rect x="680" y="166" width="170" height="24" rx="12" fill="#2aa8c4" opacity=".45"/>
+ </g>
+ <g fill="#2fb37a"><circle cx="936" cy="64" r="10"/><circle cx="906" cy="102" r="10"/><circle cx="936" cy="140" r="10"/></g>
+</svg>

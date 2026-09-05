@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ilustracao de mapa, telefone e envelope de contato">
+ <defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#eaf7fb"/><stop offset="1" stop-color="#cbe7f1"/>
+  </linearGradient>
+ </defs>
+ <rect width="1020" height="220" fill="url(#bg)"/>
+
+ <rect x="0" y="168" width="1020" height="52" fill="#b3d9e6"/>
+ <rect x="330" y="34" width="330" height="158" rx="14" fill="#ffffff" stroke="#12657f" stroke-width="5"/>
+ <g stroke="#cbe7f1" stroke-width="10" stroke-linecap="round">
+  <line x1="352" y1="86" x2="638" y2="86"/><line x1="352" y1="146" x2="638" y2="146"/>
+  <line x1="418" y1="52" x2="418" y2="176"/><line x1="566" y1="52" x2="566" y2="176"/>
+ </g>
+ <path d="M352 176c40-26 66-6 104-34 30-22 62-14 92-38" stroke="#8fd7e8" stroke-width="8" fill="none" stroke-linecap="round"/>
+ <path d="M496 60a38 38 0 0 0-38 38c0 28 38 66 38 66s38-38 38-66a38 38 0 0 0-38-38z" fill="#e05353"/>
+ <circle cx="496" cy="98" r="15" fill="#ffffff"/>
+ <rect x="128" y="46" width="86" height="140" rx="14" fill="#0b4f6c"/>
+ <rect x="138" y="62" width="66" height="100" rx="5" fill="#eaf7fb"/>
+ <circle cx="171" cy="174" r="7" fill="#2aa8c4"/>
+ <path d="M158 88c0-6 6-10 12-7l10 5c5 3 6 9 3 13l-4 5c4 9 10 15 19 19l5-4c4-3 10-2 13 3l5 10c3 6-1 12-7 12-26 0-56-30-56-56z" fill="#2fb37a"/>
+ <rect x="756" y="72" width="150" height="100" rx="10" fill="#ffffff" stroke="#12657f" stroke-width="5"/>
+ <path d="M756 82l75 54 75-54" fill="none" stroke="#1b98b8" stroke-width="7" stroke-linecap="round"/>
+ <circle cx="906" cy="72" r="22" fill="#2fb37a"/>
+ <path d="M896 72l7 8 14-15" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

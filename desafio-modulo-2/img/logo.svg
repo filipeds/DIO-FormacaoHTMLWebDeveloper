@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" role="img" aria-label="Logotipo da Clinica Vida Plena">
+ <circle cx="40" cy="40" r="32" fill="#0b4f6c"/>
+ <path d="M33 20h14v13h13v14H47v13H33V47H20V33h13z" fill="#ffffff"/>
+ <path d="M40 62c-9-7-16-13-16-21" fill="none" stroke="#2fb37a" stroke-width="5" stroke-linecap="round"/>
+ <text x="86" y="38" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold" fill="#0b4f6c">Vida Plena</text>
+ <text x="87" y="60" font-family="Arial, Helvetica, sans-serif" font-size="13" letter-spacing="2.5" fill="#2aa8c4">CLINICA MEDICA</text>
+</svg>
