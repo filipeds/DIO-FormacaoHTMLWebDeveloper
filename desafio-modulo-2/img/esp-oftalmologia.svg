@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Icone de exame de vista"><circle cx="120" cy="120" r="120" fill="#dff1f7"/>
+ <path d="M28 120c26-42 54-63 92-63s66 21 92 63c-26 42-54 63-92 63s-66-21-92-63z" fill="#ffffff" stroke="#0b4f6c" stroke-width="12" stroke-linejoin="round"/>
+ <circle cx="120" cy="120" r="40" fill="#1b98b8"/><circle cx="120" cy="120" r="17" fill="#0b2f3f"/>
+ <circle cx="134" cy="106" r="8" fill="#ffffff" opacity=".85"/>
+</svg>
