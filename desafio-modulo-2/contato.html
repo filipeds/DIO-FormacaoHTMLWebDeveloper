@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Vida Plena - Contato</title>
+    <meta name="description" content="Telefones, endereço, mapa e formulário de contato da Clínica Vida Plena.">
+    <link rel="stylesheet" href="base.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <nav class="menu">
+            <img class="logo" src="img/logo.svg" alt="Logotipo da Clínica Vida Plena">
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+                <li><a href="horarios.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html" aria-current="page">Contato</a></li>
+            </ul>
+            <p class="menu-info">
+                Atendimento<br>
+                Segunda a sexta<br>
+                08h às 19h
+            </p>
+        </nav>
+
+        <div class="main">
+
+            <header class="header">
+                <img src="img/header-contato.svg" alt="Ilustração de um mapa com marcador de localização, um telefone e um envelope">
+            </header>
+
+            <main class="content">
+                <h1>Contato</h1>
+
+                <p class="destaque">
+                    Fale com a recepção por telefone, WhatsApp ou pelo formulário desta página.
+                    Respondemos mensagens em até <strong>um dia útil</strong>.
+                </p>
+
+                <h2>Telefones</h2>
+
+                <ul>
+                    <li>
+                        <strong>Celular:</strong>
+                        <a href="tel:+551155551234">(11) 5555-1234</a>
+                        — agendamentos e informações gerais
+                    </li>
+                    <li>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/5511955554321" target="_blank" rel="noopener">(11) 95555-4321</a>
+                        — confirmação de consultas e envio de documentos
+                    </li>
+                    <li>
+                        <strong>E-mail:</strong>
+                        <a href="mailto:contato@clinicavidaplena.com.br">contato@clinicavidaplena.com.br</a>
+                    </li>
+                </ul>
+
+                <h2>Endereço</h2>
+
+                <address>
+                    <strong>Clínica Vida Plena</strong><br>
+                    Avenida Paulista, 1578 — 7º andar, conjunto 72<br>
+                    Bela Vista — São Paulo — SP<br>
+                    CEP 01310-200<br>
+                    Referência: em frente ao MASP, a 200 m da estação Trianon-Masp do metrô
+                </address>
+
+                <h2>Como chegar</h2>
+
+                <iframe
+                    title="Mapa do Google com a localização da Clínica Vida Plena na Avenida Paulista, 1578"
+                    src="https://maps.google.com/maps?q=Avenida%20Paulista%2C%201578%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP&z=16&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <p>
+                    <small>Estacionamento conveniado no mesmo prédio, com desconto mediante
+                        validação na recepção.</small>
+                </p>
+
+                <h2>Fale conosco</h2>
+
+                <p>
+                    Preencha o formulário abaixo e retornaremos pelo canal que você preferir.
+                </p>
+
+                <form action="#" method="post">
+
+                    <fieldset>
+                        <legend>Seus dados</legend>
+
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="voce@exemplo.com.br" required>
+
+                        <p>
+                            <strong>Como prefere ser contatado?</strong><br>
+                            <label class="inline"><input type="radio" name="preferencia" value="email" checked> E-mail</label>
+                            <label class="inline"><input type="radio" name="preferencia" value="telefone"> Telefone</label>
+                            <label class="inline"><input type="radio" name="preferencia" value="whatsapp"> WhatsApp</label>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sua mensagem</legend>
+
+                        <label for="assunto">Assunto</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Ex.: agendamento de consulta" required>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="7" placeholder="Conte como podemos ajudar" required></textarea>
+
+                        <p>
+                            <label class="inline">
+                                <input type="checkbox" name="consentimento" value="sim" required>
+                                Autorizo o contato da clínica pelos dados informados.
+                            </label>
+                        </p>
+                    </fieldset>
+
+                    <button type="submit">Enviar mensagem</button>
+                    <button type="reset">Limpar formulário</button>
+                </form>
+
+                <p>
+                    <small>Este formulário é uma demonstração de estudo: não há servidor por trás
+                        dele, portanto nenhuma mensagem é enviada ou armazenada.</small>
+                </p>
+
+                <h2>Urgências</h2>
+
+                <p>
+                    A Vida Plena <strong>não é um pronto-socorro</strong>. Em caso de emergência,
+                    procure o serviço de urgência mais próximo ou ligue para o SAMU
+                    (<a href="tel:192">192</a>).
+                </p>
+            </main>
+
+            <footer class="footer">
+                <div class="colunas">
+                    <div>
+                        <h2>Clínica Vida Plena</h2>
+                        <address>
+                            Av. Paulista, 1578 — Bela Vista<br>
+                            São Paulo — SP, 01310-200
+                        </address>
+                    </div>
+                    <div>
+                        <h2>Contato</h2>
+                        <p>
+                            Celular: <a href="tel:+551155551234">(11) 5555-1234</a><br>
+                            WhatsApp: <a href="https://wa.me/5511955554321" target="_blank" rel="noopener">(11) 95555-4321</a><br>
+                            <a href="mailto:contato@clinicavidaplena.com.br">contato@clinicavidaplena.com.br</a>
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Horário</h2>
+                        <p>
+                            Segunda a sexta: 08h às 19h<br>
+                            Sábados: 08h às 18h<br>
+                            Feriados: plantão 08h às 14h
+                        </p>
+                    </div>
+                </div>
+                <p class="aviso">
+                    <small>Site fictício, criado para o Desafio de Projeto do Módulo 2 da
+                        Digital Innovation One. A clínica, os endereços e os telefones não existem.</small>
+                </p>
+            </footer>
+
+        </div>
+    </div>
+</body>
+
+</html>

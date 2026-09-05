@@ -1,0 +1,359 @@
+/* ============================================================
+   base.css - Clinica Vida Plena
+   Adaptado do template do Modulo 2 da trilha de HTML da DIO.
+   A estrutura (wrapper / menu / main / header / content / footer)
+   e a mesma do template original; as cores foram trocadas por uma
+   paleta azul-clinica, como o proprio desafio autoriza.
+   ============================================================ */
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    background-color: #eef4f7;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #24404b;
+    line-height: 1.65;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+
+/* ---------------- menu ---------------- */
+
+.menu {
+    width: 15%;
+    background-color: #dff1f7;
+    padding: 18px 16px;
+    box-sizing: border-box;
+}
+
+.menu .logo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 18px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 6px;
+}
+
+.menu a {
+    display: block;
+    padding: 9px 10px;
+    border-radius: 5px;
+    color: #0b4f6c;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: #b9e0ec;
+}
+
+.menu a[aria-current="page"] {
+    background-color: #0b4f6c;
+    color: #ffffff;
+}
+
+.menu-info {
+    margin-top: 22px;
+    font-size: 12px;
+    color: #46707f;
+}
+
+/* ---------------- header ---------------- */
+
+.header {
+    background-color: #cbe7f1;
+    min-height: 150px;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ---------------- content ---------------- */
+
+.content {
+    background-color: #ffffff;
+    min-height: 300px;
+    padding: 28px 34px;
+    box-sizing: border-box;
+}
+
+.content h1 {
+    color: #0b4f6c;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.content h2 {
+    color: #12657f;
+    border-bottom: 2px solid #dff1f7;
+    padding-bottom: 6px;
+    margin-top: 34px;
+}
+
+.content h3 {
+    color: #12657f;
+    margin-bottom: 4px;
+}
+
+.content a {
+    color: #12657f;
+}
+
+.content address {
+    font-style: normal;
+    background-color: #f4fafc;
+    border-radius: 6px;
+    padding: 12px 16px;
+    display: inline-block;
+}
+
+.destaque {
+    background-color: #f4fafc;
+    border-left: 5px solid #2aa8c4;
+    padding: 12px 18px;
+    border-radius: 0 6px 6px 0;
+}
+
+/* cartoes das especialidades */
+
+.especialidades {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    margin: 18px 0;
+    padding: 0;
+}
+
+.especialidades li {
+    flex: 1;
+    text-align: center;
+    background-color: #f4fafc;
+    border-radius: 8px;
+    padding: 16px 10px;
+}
+
+.especialidades img {
+    width: 76px;
+    height: 76px;
+}
+
+.especialidades strong {
+    display: block;
+    color: #0b4f6c;
+    margin-top: 6px;
+}
+
+.especialidades small {
+    color: #5b7280;
+}
+
+figure {
+    margin: 22px 0;
+}
+
+figcaption {
+    font-size: 13px;
+    color: #5b7280;
+    margin-top: 8px;
+}
+
+blockquote {
+    border-left: 5px solid #2fb37a;
+    background-color: #f4fafc;
+    margin: 22px 0;
+    padding: 6px 20px;
+    font-style: italic;
+}
+
+/* ---------------- tabelas ---------------- */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 14px 0 8px;
+    font-size: 15px;
+}
+
+caption {
+    text-align: left;
+    font-weight: bold;
+    color: #0b4f6c;
+    padding-bottom: 8px;
+}
+
+th,
+td {
+    border: 1px solid #cbe7f1;
+    padding: 9px 12px;
+    text-align: left;
+}
+
+thead th {
+    background-color: #0b4f6c;
+    color: #ffffff;
+}
+
+tbody th {
+    background-color: #f4fafc;
+}
+
+tbody tr:nth-child(even) td {
+    background-color: #f9fcfd;
+}
+
+tfoot td {
+    background-color: #f4fafc;
+    font-size: 13px;
+    color: #5b7280;
+}
+
+/* ---------------- midias ---------------- */
+
+iframe {
+    width: 100%;
+    height: 320px;
+    border: 1px solid #cbe7f1;
+    border-radius: 8px;
+}
+
+video {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 8px;
+    display: block;
+}
+
+audio {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* ---------------- formulario ---------------- */
+
+fieldset {
+    border: 1px solid #cbe7f1;
+    border-radius: 8px;
+    padding: 18px 20px 6px;
+    margin: 0 0 18px;
+}
+
+legend {
+    color: #0b4f6c;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+label.inline {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9px 10px;
+    border: 1px solid #b9d7e2;
+    border-radius: 5px;
+    font: inherit;
+    margin-bottom: 14px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: 2px solid #2aa8c4;
+    border-color: #2aa8c4;
+}
+
+button {
+    font: inherit;
+    padding: 10px 22px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #2fb37a;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+button[type="reset"] {
+    background-color: #dfe8ec;
+    color: #24404b;
+}
+
+/* ---------------- footer ---------------- */
+
+.footer {
+    background-color: #0b4f6c;
+    min-height: 150px;
+    color: #dff1f7;
+    padding: 22px 34px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.footer h2 {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 0 8px;
+}
+
+.footer a {
+    color: #8fd7e8;
+}
+
+.footer address {
+    font-style: normal;
+}
+
+.footer .colunas {
+    display: flex;
+    gap: 40px;
+}
+
+.footer .aviso {
+    margin: 16px 0 0;
+    color: #9cc7d6;
+}
