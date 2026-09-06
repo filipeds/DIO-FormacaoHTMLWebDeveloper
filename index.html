@@ -4,236 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia das Tags HTML - Desafio DIO</title>
+    <title>Desafios da Formação HTML Web Developer — DIO</title>
+    <meta name="description"
+        content="Portal dos desafios de projeto da Formação HTML Web Developer da Digital Innovation One.">
+    <link rel="stylesheet" href="assets/css/portal.css">
 </head>
 
 <body>
 
-    <!-- ============ 1. Cabeçalho ============ -->
-    <h1>Guia das Tags HTML</h1>
-    <p>
-        <small>Desafio de Projeto do Módulo 1 da trilha de HTML da DIO &mdash; uma página que
-            explica as tags enquanto as utiliza.</small>
-    </p>
+    <a class="skip-link" href="#desafios">Pular para a lista de desafios</a>
 
-    <hr>
+    <header class="topo">
+        <div class="container">
+            <p class="topo__sobretitulo">Digital Innovation One</p>
+            <h1>Formação HTML Web Developer</h1>
+            <p class="topo__resumo">
+                Desafios de projeto da trilha de HTML, resolvidos um por módulo. Cada desafio é uma
+                página estática, sem build e sem dependências — basta abrir no navegador.
+            </p>
+        </div>
+    </header>
 
-    <!-- ============ 2. Introdução ============ -->
-    <h2>O que é HTML?</h2>
-    <p>
-        O <abbr title="HyperText Markup Language">HTML</abbr> é a linguagem de marcação que
-        estrutura todo o conteúdo da web. <strong>Ele não é uma linguagem de programação:</strong>
-        não possui variáveis, condicionais ou laços de repetição. Sua função é dizer ao navegador
-        <mark>o que cada pedaço de conteúdo significa</mark> &mdash; se é um título, um parágrafo,
-        uma lista ou um link.
-    </p>
-    <p>
-        Cada marcação é chamada de <i>tag</i>. Esta página demonstra, na prática, as tags
-        apresentadas nas aulas do módulo, agrupadas por finalidade.
-    </p>
+    <main class="container">
 
-    <hr>
+        <h2 id="desafios">Desafios</h2>
 
-    <!-- ============ 3. Hierarquia de títulos ============ -->
-    <h2>Hierarquia de títulos</h2>
-    <p>
-        O HTML oferece seis níveis de título, de <strong>h1</strong> a <strong>h6</strong>. Eles não
-        servem apenas para deixar o texto maior ou menor: eles descrevem a <u>hierarquia</u> do
-        documento, e é por ela que leitores de tela e mecanismos de busca entendem a organização da
-        página. Os níveis abaixo demonstram essa escala.
-    </p>
+        <ul class="cartoes">
 
-    <h3>Nível 3 &mdash; subseção</h3>
-    <p>Divide um assunto tratado dentro de uma seção principal.</p>
+            <li class="cartao">
+                <article>
+                    <p class="cartao__modulo">Módulo 1</p>
+                    <h3><a href="desafio-modulo-1/index.html">Guia das tags HTML</a></h3>
+                    <p>
+                        Uma página que explica as tags HTML enquanto as utiliza, organizada por
+                        finalidade: títulos, formatação, listas, citações e tags obsoletas.
+                    </p>
+                    <p class="cartao__exercita">
+                        <strong>Exercita:</strong> as 19 tags exigidas pelo desafio, em HTML puro,
+                        sem CSS.
+                    </p>
+                </article>
+            </li>
 
-    <h4>Nível 4 &mdash; tópico</h4>
-    <p>Recorte mais específico dentro de uma subseção.</p>
+            <li class="cartao">
+                <article>
+                    <p class="cartao__modulo">Módulo 2</p>
+                    <h3><a href="desafio-modulo-2/index.html">Site da Clínica Vida Plena</a></h3>
+                    <p>
+                        Site de quatro páginas de uma clínica médica fictícia: apresentação, sobre,
+                        horários de atendimento e contato.
+                    </p>
+                    <p class="cartao__exercita">
+                        <strong>Exercita:</strong> formulários, tabelas, mídias
+                        (<code>video</code> e <code>audio</code>), iframe e estruturação de texto.
+                    </p>
+                </article>
+            </li>
 
-    <h5>Nível 5 &mdash; detalhe</h5>
-    <p>Usado em documentos longos, com muitas ramificações.</p>
+            <li class="cartao">
+                <article>
+                    <p class="cartao__modulo">Módulo 3</p>
+                    <h3><a href="desafio-modulo-3/index.html">Enciclopédia Aberta</a></h3>
+                    <p>
+                        Artigo de enciclopédia sobre a capivara, com layout de três colunas, tema
+                        claro e escuro e índice que acompanha a rolagem.
+                    </p>
+                    <p class="cartao__exercita">
+                        <strong>Exercita:</strong> semântica e acessibilidade — landmarks, skip
+                        link, hierarquia de títulos e contraste verificado.
+                    </p>
+                </article>
+            </li>
 
-    <h6>Nível 6 &mdash; observação</h6>
-    <p>O menor nível disponível. Raramente é necessário chegar até aqui.</p>
+        </ul>
 
-    <p>
-        <small>Boa prática: use apenas um <strong>h1</strong> por página e não pule níveis
-            (ir de h2 direto para h4, por exemplo).</small>
-    </p>
-
-    <hr>
-
-    <!-- ============ 4. Formatação de texto ============ -->
-    <h2>Formatação de texto</h2>
-    <p>
-        Dentro de um parágrafo, algumas tags alteram a aparência ou o sentido de trechos
-        específicos:
-    </p>
-
-    <ul>
-        <li><strong>strong</strong> &mdash; marca um conteúdo de <strong>grande importância</strong>.
-            O navegador exibe em negrito, mas o valor real está no significado.</li>
-        <li><i>i</i> &mdash; aplica <i>itálico</i>, tradicionalmente usado em termos técnicos,
-            palavras estrangeiras e nomes de obras.</li>
-        <li><u>u</u> &mdash; aplica <u>sublinhado</u>. Deve ser usado com cuidado, porque na web o
-            sublinhado costuma indicar um link.</li>
-        <li><mark>mark</mark> &mdash; destaca o texto como se fosse feito com um
-            <mark>marca-texto</mark>, sinalizando relevância no contexto atual.</li>
-        <li><del>del</del> &mdash; indica conteúdo <del>removido</del> do documento. Muito útil para
-            mostrar preços antigos, correções e informações que ficaram desatualizadas.</li>
-        <li><small>small</small> &mdash; reduz o tamanho da fonte, apropriado para
-            <small>notas de rodapé, avisos legais e ressalvas</small>.</li>
-    </ul>
-
-    <p>
-        Um exemplo combinando as três últimas: a promoção custava <del>R$ 199,00</del> e agora sai
-        por <mark>R$ 149,00</mark>. <small>Oferta válida enquanto durar o estoque.</small>
-    </p>
-
-    <hr>
-
-    <!-- ============ 5. Sub e sobrescrito ============ -->
-    <h2>Subscrito e sobrescrito</h2>
-    <p>
-        As tags <strong>sub</strong> e <strong>sup</strong> deslocam o texto para baixo ou para cima
-        da linha de base, reduzindo seu tamanho. São indispensáveis em notação científica e
-        matemática.
-    </p>
-
-    <ul>
-        <li>Fórmulas químicas: a água é H<sub>2</sub>O e o gás carbônico é CO<sub>2</sub>.</li>
-        <li>Potências: a área de um quadrado é lado<sup>2</sup> e o volume de um cubo é
-            aresta<sup>3</sup>.</li>
-        <li>Ordinais e notas: a 1<sup>a</sup> edição do curso<sup>*</sup> começou em 2020.</li>
-    </ul>
-
-    <p><small><sup>*</sup> Data usada apenas como exemplo de nota de rodapé.</small></p>
-
-    <hr>
-
-    <!-- ============ 6. Listas ============ -->
-    <h2>Listas</h2>
-
-    <h3>Lista ordenada</h3>
-    <p>
-        A tag <strong>ol</strong> cria uma lista numerada, na qual <u>a ordem importa</u>. Cada item
-        é um <strong>li</strong>. Os passos para criar uma página do zero:
-    </p>
-    <ol>
-        <li>Criar um arquivo com a extensão <i>.html</i>.</li>
-        <li>Declarar o tipo do documento com <strong>&lt;!DOCTYPE html&gt;</strong>.</li>
-        <li>Escrever o <i>head</i> com o título e a codificação de caracteres.</li>
-        <li>Escrever o <i>body</i> com o conteúdo visível.</li>
-        <li>Abrir o arquivo no navegador para conferir o resultado.</li>
-    </ol>
-
-    <h3>Lista não ordenada</h3>
-    <p>
-        Já a tag <strong>ul</strong> gera uma lista com marcadores, para quando a ordem
-        <mark>não</mark> tem relevância. Algumas tags de bloco muito comuns:
-    </p>
-    <ul>
-        <li>Parágrafos de texto</li>
-        <li>Títulos e subtítulos</li>
-        <li>Listas ordenadas e não ordenadas</li>
-        <li>Citações em bloco</li>
-        <li>Linhas divisórias</li>
-    </ul>
-
-    <p>
-        <small>Listas também podem ser aninhadas: basta colocar um <strong>ul</strong> ou
-            <strong>ol</strong> completo dentro de um <strong>li</strong>.</small>
-    </p>
-
-    <hr>
-
-    <!-- ============ 7. Citação ============ -->
-    <h2>Citações</h2>
-    <p>
-        A tag <strong>blockquote</strong> representa um trecho citado de outra fonte. O navegador
-        aplica um recuo à esquerda, deixando claro que aquele texto não é do autor da página:
-    </p>
-
-    <blockquote cite="https://www.w3.org/People/Berners-Lee/">
+        <h2>Como abrir</h2>
         <p>
-            Esta é para todo mundo. A web que construí é uma ferramenta pública, e ninguém deveria
-            precisar de permissão para publicar nela.
+            Clone o repositório e abra qualquer <code>index.html</code> no navegador. Não há
+            instalação, build nem servidor.
         </p>
-        <p><small>&mdash; Tim Berners-Lee, criador da World Wide Web</small></p>
-    </blockquote>
 
-    <p>
-        O atributo <i>cite</i> guarda o endereço da fonte original. Ele não aparece na tela, mas
-        documenta a origem da citação no código.
-    </p>
+        <pre><code>git clone https://github.com/filipeds/DIO-FormacaoHTMLWebDeveloper.git</code></pre>
 
-    <hr>
+        <p>
+            O único recurso que depende de conexão é o mapa do Google Maps na página de contato do
+            Módulo 2. Todo o resto funciona offline.
+        </p>
 
-    <!-- ============ 8. Tags obsoletas ============ -->
-    <h2>Tags obsoletas: o caso do font</h2>
-    <p>
-        Nem toda tag continua recomendada. A tag <strong>font</strong> era a forma antiga de definir
-        cor, tamanho e tipo de letra diretamente no HTML:
-    </p>
+    </main>
 
-    <p>
-        <font color="green" size="5" face="Arial">Este texto usa a tag font: verde, tamanho 5 e
-            fonte Arial.</font>
-    </p>
-
-    <p>
-        Desde o HTML5 ela está <del>em uso recomendado</del> <strong>obsoleta</strong>. O motivo é
-        uma separação de responsabilidades: o HTML deve cuidar da <u>estrutura</u> do conteúdo,
-        enquanto a aparência fica por conta do <abbr title="Cascading Style Sheets">CSS</abbr>.
-        <mark>Em projetos novos, use CSS no lugar de font.</mark> Ela aparece aqui apenas para fins
-        didáticos, como pede o desafio.
-    </p>
-
-    <p>
-        <small>Outras tags que seguiram o mesmo caminho: <del>center</del>, <del>big</del> e
-            <del>strike</del>.</small>
-    </p>
-
-    <hr>
-
-    <!-- ============ 9. Referências ============ -->
-    <h2>Referências</h2>
-    <p>
-        A tag <strong>a</strong> (de <i>anchor</i>) cria links. O atributo <i>href</i> aponta o
-        destino, e <i>target="_blank"</i> abre o endereço em uma nova aba:
-    </p>
-
-    <ul>
-        <li>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element" target="_blank"
-                rel="noopener">MDN Web Docs &mdash; Referência de elementos HTML</a>
-        </li>
-        <li>
-            <a href="https://www.w3schools.com/tags/" target="_blank" rel="noopener">W3Schools
-                &mdash; HTML Tag Reference</a>
-        </li>
-        <li>
-            <a href="https://github.com/digitalinnovationone/trilha-html-modulo-1" target="_blank"
-                rel="noopener">DIO &mdash; Repositório da trilha de HTML, módulo 1</a>
-        </li>
-        <li>
-            <a href="https://www.dio.me/" target="_blank" rel="noopener">Digital Innovation One</a>
-        </li>
-    </ul>
-
-    <p>
-        <small>O atributo <i>rel="noopener"</i> acompanha <i>target="_blank"</i> por segurança:
-            impede que a página aberta consiga manipular a página de origem.</small>
-    </p>
-
-    <hr>
-
-    <!-- ============ 10. Rodapé ============ -->
-    <p>
-        <small>
-            Desenvolvido por <strong>Filipe</strong> para o Desafio de Projeto do Módulo 1 da
-            <abbr title="Digital Innovation One">DIO</abbr>.
-        </small>
-    </p>
+    <footer class="rodape">
+        <div class="container">
+            <p>
+                Repositório de estudos da Formação HTML Web Developer da
+                <abbr title="Digital Innovation One">DIO</abbr>.
+            </p>
+            <p class="rodape__aviso">
+                <small>
+                    As empresas, marcas e pessoas retratadas nos desafios são fictícias e existem
+                    apenas como exercício.
+                </small>
+            </p>
+        </div>
+    </footer>
 
 </body>
 

@@ -1,8 +1,8 @@
-# Desafio de Projeto - Módulo 3: Recriando uma enciclopédia com layout moderno
+# Desafio de Projeto — Módulo 3: Enciclopédia Aberta
 
-Página de artigo de enciclopédia criada para o Desafio de Projeto do Módulo 3 da
-trilha de HTML da **Digital Innovation One**, cujo objetivo é treinar
-**estrutura de página**, **semântica** e **acessibilidade**.
+Página de artigo de enciclopédia sobre a **capivara**
+(*Hydrochoerus hydrochaeris*), com layout de três colunas, tema claro e escuro e
+índice que acompanha a rolagem.
 
 > **Sobre a marca:** o desafio se chama "Recriando Wikipedia", mas nenhuma parte
 > da identidade visual da Wikipédia foi reproduzida aqui. A *Enciclopédia
@@ -10,14 +10,15 @@ trilha de HTML da **Digital Innovation One**, cujo objetivo é treinar
 > a Wikipédia nem com a Wikimedia Foundation. O que o exercício pede — a
 > estrutura de página de uma enciclopédia — está preservado por inteiro.
 
-O artigo é sobre a **capivara** (*Hydrochoerus hydrochaeris*), o maior roedor
-vivo do mundo.
+## O desafio
 
-## O que a base da DIO trazia
+Treinar **estrutura de página**, **semântica** e **acessibilidade** a partir de
+uma base pré-montada. O repositório do módulo fornece um `index.html` com o
+layout inteiro em `<div>` e um `base.css` com um grid de três colunas.
 
-O repositório do módulo fornece um `index.html` com o layout inteiro montado em
-`<div>` e um `base.css` com um grid de três colunas. O trabalho foi trocar cada
-`<div>` pelo elemento semântico correto e evoluir o CSS.
+## O que foi feito
+
+Cada `<div>` da base foi trocado pelo elemento semântico correto:
 
 | Base (DIO) | Virou |
 | --- | --- |
@@ -28,7 +29,13 @@ O repositório do módulo fornece um `index.html` com o layout inteiro montado e
 | `div.anchors` | `<nav aria-labelledby="indice-titulo">` |
 | `div.footer` | `<footer>` |
 
-## Acessibilidade
+O grid de três colunas foi mantido no desktop e reescrito com variáveis de cor,
+tipografia fluida e comportamento responsivo. Abaixo de 1080 px o layout vira
+coluna única, com navegação e índice colapsáveis em `<details>`.
+
+## Recursos usados
+
+### Acessibilidade
 
 - **Skip link** para o conteúdo principal, escondido até receber foco. O
   `<main>` tem `tabindex="-1"` para que o foco realmente se mova, e não apenas o
@@ -51,17 +58,23 @@ O repositório do módulo fornece um `index.html` com o layout inteiro montado e
 - **Tabela rolável** dentro de um contêiner focável, para quem navega por
   teclado conseguir rolá-la.
 
-## Layout
+### Conteúdo
 
-O grid de três colunas da base foi mantido no desktop e reescrito com variáveis
-de cor, tipografia fluida e comportamento responsivo. Abaixo de 1080 px o layout
-vira coluna única, com navegação e índice colapsáveis em `<details>`. O índice
-acompanha a rolagem e destaca a seção visível.
+Infobox taxonômica em `<dl>`, tabela comparativa com `<caption>` e `<th scope>`,
+`<figure>`/`<figcaption>` nas ilustrações e notas de rodapé com link de ida e de
+volta.
+
+### JavaScript
+
+O único script tem cerca de vinte linhas e serve apenas para destacar no índice
+a seção que está sendo lida. **A página funciona por inteiro sem ele:** os links
+do índice são âncoras HTML comuns.
 
 ## Estrutura de arquivos
 
 ```
 desafio-modulo-3/
+├── README.md
 ├── index.html
 └── assets/
     ├── css/style.css       Layout, temas e tipografia
@@ -69,24 +82,17 @@ desafio-modulo-3/
     └── images/             Logotipo (claro e escuro) e ilustrações, em SVG
 ```
 
-## JavaScript
-
-O único script tem cerca de vinte linhas e serve apenas para destacar no índice
-a seção que está sendo lida. **A página funciona por inteiro sem ele:** os links
-do índice são âncoras HTML comuns.
-
 ## Como visualizar
 
 Abra `index.html` em qualquer navegador. Não há build, dependências nem
-servidor.
+servidor, e a página funciona offline.
 
-## Ilustrações
+## Créditos
 
 O logotipo, a ilustração da capivara, o mapa de distribuição e o diagrama de
-comparação de tamanho foram desenhados para este projeto, em SVG. O mapa é
-esquemático e não tem precisão cartográfica — o próprio desenho diz isso.
-
-## Sobre o conteúdo
+comparação de tamanho foram desenhados para este projeto, em SVG. Não há
+material de terceiros. O mapa é esquemático e não tem precisão cartográfica — o
+próprio desenho diz isso.
 
 O texto é informativo e foi escrito para o exercício; não substitui literatura
 científica. As fontes reais para leitura estão listadas na seção *Referências*
