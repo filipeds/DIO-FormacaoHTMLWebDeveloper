@@ -1,69 +1,87 @@
-# DIO - Formação HTML Web Developer
+# DIO — Formação HTML Web Developer
 
-Repositório dos desafios da [Formação HTML Web Developer](https://www.dio.me/) da
-**Digital Innovation One**.
+Repositório dos desafios de projeto da
+[Formação HTML Web Developer](https://www.dio.me/) da **Digital Innovation One**.
 
-## Desafio de Projeto - Módulo 1: Criando uma Página Web com Tags HTML
+Cada módulo da trilha tem um desafio, e cada desafio vive na própria pasta. São
+páginas estáticas: sem build, sem dependências e sem servidor.
 
-O desafio consiste em elaborar um website de estrutura básica utilizando as tags
-apresentadas nas aulas práticas, além de pesquisar e aplicar algumas tags novas.
+## Desafios
 
-O resultado é o arquivo [`index.html`](index.html): um **guia das tags HTML** que
-explica cada uma delas enquanto as utiliza, organizado por finalidade. A página é
-HTML puro, sem CSS, mantendo-se fiel ao escopo do módulo.
+| Módulo | Desafio | O que exercita |
+| --- | --- | --- |
+| 1 | [Guia das tags HTML](desafio-modulo-1/) | As 19 tags exigidas pelo desafio, em HTML puro, sem CSS |
+| 2 | [Site da Clínica Vida Plena](desafio-modulo-2/) | Formulários, tabelas, mídias, iframe e estruturação de texto |
+| 3 | [Enciclopédia Aberta](desafio-modulo-3/) | Semântica e acessibilidade: landmarks, skip link, contraste |
 
-### Tags utilizadas
+Cada pasta tem um `README.md` com a descrição completa do desafio, os recursos
+usados e a estrutura de arquivos.
 
-**Tags das aulas:**
+## Estrutura do repositório
 
-| Tag | Finalidade |
-| --- | --- |
-| `<h1>` a `<h6>` | Títulos e hierarquia do documento |
-| `<p>` | Parágrafos de texto |
-| `<mark>` | Destaque estilo marca-texto |
-| `<small>` | Textos secundários e notas de rodapé |
-| `<i>` | Itálico |
-| `<u>` | Sublinhado |
-| `<strong>` | Conteúdo de grande importância |
-| `<ol>` / `<li>` | Lista ordenada |
-| `<ul>` / `<li>` | Lista não ordenada |
-| `<a>` | Links |
-| `<hr>` | Linha divisória entre seções |
-| `<sub>` | Subscrito (ex: H<sub>2</sub>O) |
-| `<sup>` | Sobrescrito (ex: lado<sup>2</sup>) |
-| `<blockquote>` | Citação em bloco |
+```
+.
+├── index.html               Portal com os três desafios
+├── assets/css/portal.css    Estilo do portal
+│
+├── desafio-modulo-1/        Guia das tags HTML
+│   ├── README.md
+│   └── index.html
+│
+├── desafio-modulo-2/        Site da Clínica Vida Plena
+│   ├── README.md
+│   ├── CREDITS.md
+│   ├── index.html · sobre.html · horarios.html · contato.html
+│   └── assets/
+│       ├── css/
+│       ├── images/
+│       └── media/
+│
+├── desafio-modulo-3/        Enciclopédia Aberta
+│   ├── README.md
+│   ├── index.html
+│   └── assets/
+│       ├── css/
+│       ├── images/
+│       └── js/
+│
+└── docs/superpowers/specs/  Documentos de design de cada desafio
+```
 
-**Tags pesquisadas (sugeridas pelo desafio):**
+Os três desafios seguem o mesmo padrão: um `README.md` na raiz da pasta, o
+`index.html` como página de entrada e todos os arquivos de apoio em `assets/`,
+separados por tipo.
 
-| Tag | Finalidade |
-| --- | --- |
-| `<font>` | Cor, tamanho e tipo de letra — **obsoleta** desde o HTML5, usada aqui apenas para fins didáticos |
-| `<del>` | Marca conteúdo removido ou desatualizado |
-| `<abbr>` | Abreviaturas e siglas, com o significado no atributo `title` |
+## Como visualizar
 
-### Conteúdo da página
-
-1. O que é HTML
-2. Hierarquia de títulos
-3. Formatação de texto
-4. Subscrito e sobrescrito
-5. Listas ordenadas e não ordenadas
-6. Citações
-7. Tags obsoletas: o caso do `<font>`
-8. Referências
-
-### Como visualizar
-
-Clone o repositório e abra o arquivo `index.html` em qualquer navegador:
+Clone o repositório e abra o `index.html` da raiz no navegador — ele serve de
+portal para os três desafios. Cada pasta também pode ser aberta diretamente.
 
 ```bash
 git clone https://github.com/filipeds/DIO-FormacaoHTMLWebDeveloper.git
 cd DIO-FormacaoHTMLWebDeveloper
 ```
 
-Não há dependências, build ou servidor: basta abrir o arquivo.
+Não há instalação nem comando de build. O único recurso que depende de conexão é
+o mapa do Google Maps na página de contato do Módulo 2; todo o resto funciona
+offline.
 
-## Referência
+## Documentos de design
 
-Código-fonte desenvolvido durante as aulas do curso:
-[digitalinnovationone/trilha-html-modulo-1](https://github.com/digitalinnovationone/trilha-html-modulo-1)
+Cada desafio foi desenhado antes de ser implementado. Os documentos estão em
+[`docs/superpowers/specs/`](docs/superpowers/specs/) e registram as decisões
+tomadas, as alternativas descartadas e os critérios de verificação usados.
+
+## Observação sobre o conteúdo
+
+As empresas, marcas, endereços, telefones e pessoas que aparecem nos desafios
+são **fictícios** e existem apenas como exercício. Nenhuma identidade visual de
+organização real foi reproduzida.
+
+## Repositórios base da DIO
+
+Código-fonte das aulas de cada módulo:
+
+- [trilha-html-modulo-1](https://github.com/digitalinnovationone/trilha-html-modulo-1)
+- [trilha-html-modulo-2](https://github.com/digitalinnovationone/trilha-html-modulo-2)
+- [trilha-html-modulo-3](https://github.com/digitalinnovationone/trilha-html-modulo-3)
