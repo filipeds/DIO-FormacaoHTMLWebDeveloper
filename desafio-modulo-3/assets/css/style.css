@@ -1,0 +1,565 @@
+/* ============================================================
+   Enciclopédia Aberta — Desafio do Módulo 3 da trilha HTML da DIO
+
+   Evolução do base.css fornecido pela DIO: o grid de três colunas
+   (navegação | artigo | índice) foi mantido, mas reescrito com
+   variáveis de cor, tema claro/escuro e comportamento responsivo.
+
+   A paleta abaixo foi verificada com o cálculo de contraste WCAG 2.1:
+   todo par de texto atinge no mínimo 4.5:1 e o anel de foco, 3:1,
+   nos dois temas.
+   ============================================================ */
+
+:root {
+    --bg: #ffffff;
+    --superficie: #f4f7f9;
+    --texto: #1b2227;
+    --suave: #57646f;
+    --link: #0b5cad;
+    --visitado: #6a3ea1;
+    --borda: #c3ccd4;
+    --foco: #a2440b;
+    --cabecalho: #123c56;
+    --sobre-cabecalho: #ffffff;
+    --destaque-bg: #eef2f5;
+
+    --largura-maxima: 1440px;
+    --raio: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #11161b;
+        --superficie: #1a212a;
+        --texto: #e7edf2;
+        --suave: #a7b4c0;
+        --link: #74b6f5;
+        --visitado: #c6a4ef;
+        --borda: #33404d;
+        --foco: #f0a868;
+        --cabecalho: #0d2534;
+        --sobre-cabecalho: #e7edf2;
+        --destaque-bg: #202932;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: clamp(1rem, 0.96rem + 0.2vw, 1.075rem);
+    line-height: 1.7;
+}
+
+/* Quem pediu menos movimento não recebe rolagem animada. */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ---------------- links e foco ---------------- */
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--visitado);
+}
+
+:focus-visible {
+    outline: 3px solid var(--foco);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* ---------------- pular para o conteúdo ---------------- */
+
+.skip-link {
+    position: absolute;
+    left: 1rem;
+    top: -100px;
+    z-index: 10;
+    background-color: var(--bg);
+    color: var(--link);
+    border: 2px solid var(--foco);
+    border-radius: var(--raio);
+    padding: 0.7rem 1.2rem;
+    font-weight: 700;
+    transition: top 0.15s ease-in-out;
+}
+
+.skip-link:focus {
+    top: 1rem;
+}
+
+/* ---------------- cabeçalho ---------------- */
+
+.cabecalho {
+    background-color: var(--superficie);
+    border-bottom: 1px solid var(--borda);
+}
+
+.cabecalho__interno {
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+}
+
+.cabecalho__marca img {
+    display: block;
+    width: 15rem;
+    height: auto;
+}
+
+.cabecalho__lema {
+    margin: 0;
+    color: var(--suave);
+    font-size: 0.9rem;
+}
+
+/* ---------------- trilha de navegação ---------------- */
+
+.trilha {
+    background-color: var(--bg);
+    border-bottom: 1px solid var(--borda);
+}
+
+.trilha__interna {
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    padding: 0.6rem 1rem;
+}
+
+.trilha ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.trilha li + li::before {
+    content: "/";
+    color: var(--suave);
+    margin-right: 0.4rem;
+}
+
+.trilha [aria-current="page"] {
+    color: var(--suave);
+    font-weight: 700;
+}
+
+/* ---------------- layout de três colunas ---------------- */
+
+.layout {
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+    display: grid;
+    gap: 1.5rem;
+    /* minmax(0, 1fr) impede que conteudo largo (a tabela, por exemplo)
+       estique a faixa e provoque rolagem horizontal na pagina. */
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+        "lateral"
+        "indice"
+        "artigo";
+}
+
+/* Pelo mesmo motivo: itens de grid tem min-width: auto por padrao, o que
+   os impede de encolher abaixo do proprio conteudo. */
+.lateral,
+.artigo,
+.indice {
+    min-width: 0;
+}
+
+.lateral {
+    grid-area: lateral;
+}
+
+.artigo {
+    grid-area: artigo;
+}
+
+.indice {
+    grid-area: indice;
+}
+
+/* Em telas estreitas o resumo do <details> ja diz "Neste artigo";
+   o rotulo repetido sai da tela, mas continua nomeando o <nav>. */
+.indice__titulo {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+@media (min-width: 1080px) {
+    .layout {
+        gap: 3rem;
+        grid-template-areas: "lateral artigo indice";
+        grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 16rem);
+        padding-top: 1.5rem;
+    }
+
+    .lateral {
+        border-right: 1px solid var(--borda);
+        padding-right: 1.5rem;
+    }
+
+    .indice {
+        border-left: 1px solid var(--borda);
+        padding-left: 1.5rem;
+        align-self: start;
+        position: sticky;
+        top: 1.5rem;
+        max-height: calc(100vh - 3rem);
+        overflow-y: auto;
+    }
+
+    /* No desktop as duas colunas ficam sempre abertas: o resumo
+       de <details> vira redundante e é removido da tela. */
+    .lateral summary,
+    .indice summary {
+        display: none;
+    }
+
+    /* Sem o resumo do <details> na tela, o rotulo volta a ser visivel. */
+    .indice__titulo {
+        position: static;
+        width: auto;
+        height: auto;
+        overflow: visible;
+        clip-path: none;
+        white-space: normal;
+    }
+}
+
+/* ---------------- barras laterais ---------------- */
+
+.lateral summary,
+.indice summary {
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0.7rem 0.25rem;
+    border-bottom: 1px solid var(--borda);
+}
+
+.lateral ul,
+.indice ol {
+    list-style: none;
+    margin: 0 0 1.25rem;
+    padding: 0;
+}
+
+.lateral li,
+.indice li {
+    margin-bottom: 0.15rem;
+}
+
+.lateral a,
+.indice a {
+    display: block;
+    padding: 0.3rem 0.5rem;
+    border-radius: 6px;
+    border-left: 3px solid transparent;
+}
+
+.lateral a:hover,
+.indice a:hover {
+    background-color: var(--superficie);
+}
+
+.lateral__titulo,
+.indice__titulo {
+    font-size: 0.78rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--suave);
+    margin: 1.25rem 0 0.5rem;
+}
+
+/* Seção que está sendo lida, marcada pelo indice.js. */
+.indice a[aria-current="location"] {
+    background-color: var(--destaque-bg);
+    border-left-color: var(--foco);
+    font-weight: 700;
+}
+
+/* ---------------- artigo ---------------- */
+
+.artigo h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(2rem, 1.5rem + 2vw, 2.9rem);
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--borda);
+}
+
+.artigo h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(1.4rem, 1.2rem + 0.7vw, 1.75rem);
+    font-weight: 400;
+    margin: 2.5rem 0 0.6rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid var(--borda);
+}
+
+.artigo h3 {
+    font-size: 1.15rem;
+    margin: 1.75rem 0 0.4rem;
+}
+
+.artigo p {
+    margin: 0 0 1rem;
+    max-width: 68ch;
+}
+
+.artigo__resumo {
+    font-size: 1.1em;
+    color: var(--texto);
+}
+
+.artigo section {
+    scroll-margin-top: 1.5rem;
+}
+
+/* ---------------- infobox ---------------- */
+
+.infobox {
+    background-color: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    padding: 1rem 1.25rem 1.25rem;
+    margin: 0 0 1.5rem;
+}
+
+.infobox h2 {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 0.75rem;
+    padding: 0;
+    border: 0;
+}
+
+.infobox__figura {
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.infobox__figura img {
+    width: 100%;
+    height: auto;
+}
+
+.infobox__dados {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.35rem 1rem;
+    font-size: 0.92rem;
+}
+
+.infobox__dados dt {
+    font-weight: 700;
+    color: var(--suave);
+}
+
+.infobox__dados dd {
+    margin: 0;
+}
+
+@media (min-width: 1080px) {
+    .infobox {
+        float: right;
+        width: 22rem;
+        margin: 0 0 1.5rem 2rem;
+    }
+}
+
+/* ---------------- figuras ---------------- */
+
+figure {
+    margin: 1.5rem 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--borda);
+    border-radius: var(--raio);
+    background-color: var(--superficie);
+}
+
+figcaption {
+    color: var(--suave);
+    font-size: 0.88rem;
+    margin-top: 0.5rem;
+    max-width: 60ch;
+}
+
+.figura-mapa img {
+    width: min(100%, 20rem);
+}
+
+.figura-larga img {
+    width: min(100%, 34rem);
+}
+
+/* ---------------- tabela ---------------- */
+
+.tabela-rolavel {
+    overflow-x: auto;
+    margin: 1rem 0 1.5rem;
+    border-radius: var(--raio);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 32rem;
+    font-size: 0.95rem;
+}
+
+caption {
+    text-align: left;
+    color: var(--suave);
+    font-size: 0.88rem;
+    padding-bottom: 0.5rem;
+}
+
+th,
+td {
+    border: 1px solid var(--borda);
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+}
+
+thead th {
+    background-color: var(--cabecalho);
+    color: var(--sobre-cabecalho);
+    font-weight: 700;
+}
+
+tbody th {
+    background-color: var(--superficie);
+}
+
+tbody tr:nth-child(even) td {
+    background-color: var(--superficie);
+}
+
+/* ---------------- citação e notas ---------------- */
+
+blockquote {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1.25rem;
+    border-left: 4px solid var(--foco);
+    background-color: var(--superficie);
+    border-radius: 0 var(--raio) var(--raio) 0;
+}
+
+.citacao {
+    margin: 1.5rem 0;
+}
+
+.citacao blockquote {
+    margin: 0;
+}
+
+.citacao figcaption {
+    margin-top: 0.5rem;
+}
+
+.nota a {
+    padding: 0 0.15rem;
+    font-size: 0.85em;
+}
+
+.notas {
+    padding-left: 1.4rem;
+    font-size: 0.94rem;
+}
+
+.notas li {
+    margin-bottom: 0.6rem;
+}
+
+.notas__voltar {
+    white-space: nowrap;
+    font-size: 0.88em;
+}
+
+/* ---------------- rodapé ---------------- */
+
+.rodape {
+    background-color: var(--superficie);
+    border-top: 1px solid var(--borda);
+    margin-top: 2rem;
+}
+
+.rodape__interno {
+    max-width: var(--largura-maxima);
+    margin: 0 auto;
+    padding: 1.75rem 1rem 2.5rem;
+}
+
+.rodape h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 0.5rem;
+}
+
+.rodape p {
+    margin: 0 0 0.75rem;
+    max-width: 68ch;
+}
+
+.rodape__aviso {
+    color: var(--suave);
+}

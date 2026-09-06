@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 64" role="img" aria-label="Enciclopedia Aberta">
+ <g fill="none" stroke="#123c56" stroke-width="3.5" stroke-linejoin="round">
+  <path d="M8 16c10-5 20-5 24 1v34c-4-6-14-6-24-1z" fill="#dce7ee"/>
+  <path d="M56 16c-10-5-20-5-24 1v34c4-6 14-6 24-1z" fill="#eef4f8"/>
+ </g>
+ <circle cx="32" cy="30" r="9" fill="none" stroke="#0b5cad" stroke-width="2.5"/>
+ <path d="M23 30h18M32 21c4 5 4 13 0 18M32 21c-4 5-4 13 0 18" fill="none" stroke="#0b5cad" stroke-width="1.8"/>
+ <text x="70" y="30" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#123c56">Enciclop&#233;dia</text>
+ <text x="70" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="22" font-style="italic" fill="#0b5cad">Aberta</text>
+</svg>

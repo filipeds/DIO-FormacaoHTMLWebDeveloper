@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 330" role="img" aria-label="Ilustracao de uma capivara de perfil">
+ <defs>
+  <linearGradient id="pelo" x1="0" y1="0" x2="0" y2="1">
+   <stop offset="0" stop-color="#a06a44"/><stop offset="1" stop-color="#7d5133"/>
+  </linearGradient>
+ </defs>
+
+ <ellipse cx="262" cy="300" rx="200" ry="16" fill="#000000" opacity=".10"/>
+
+ <g fill="#6b442a">
+  <rect x="176" y="228" width="34" height="72" rx="14"/>
+  <rect x="232" y="234" width="32" height="66" rx="13"/>
+  <rect x="308" y="228" width="34" height="72" rx="14"/>
+  <rect x="358" y="234" width="32" height="66" rx="13"/>
+ </g>
+ <g fill="#4f3120">
+  <rect x="174" y="286" width="38" height="16" rx="7"/>
+  <rect x="306" y="286" width="38" height="16" rx="7"/>
+ </g>
+
+ <path d="M150 180c0-46 46-76 118-76s128 28 128 76c0 40-34 70-90 70h-70c-52 0-86-30-86-70z" fill="url(#pelo)"/>
+ <path d="M232 246c-46 0-78-24-82-58 30 22 74 32 122 32s86-12 112-32c-6 36-40 58-84 58z" fill="#6b442a" opacity=".55"/>
+
+ <path d="M150 176c-14-8-30-14-46-14-24 0-42 14-42 34 0 22 20 36 48 36 16 0 32-4 44-12z" fill="url(#pelo)"/>
+ <path d="M62 196c0-20 18-34 42-34 8 0 16 2 24 5-10 3-18 9-22 17-6 12-4 24 6 33-6 2-12 3-18 3-20 0-32-10-32-24z" fill="#8b5c39"/>
+
+ <ellipse cx="70" cy="182" rx="12" ry="10" fill="#4f3120"/>
+ <circle cx="66" cy="180" r="3.2" fill="#2b1a10"/>
+ <path d="M62 196c6 4 14 4 20 0" fill="none" stroke="#3a2415" stroke-width="3" stroke-linecap="round"/>
+
+ <circle cx="112" cy="168" r="6.5" fill="#241610"/>
+ <circle cx="114" cy="166" r="2.2" fill="#ffffff" opacity=".8"/>
+
+ <path d="M150 152c-2-14 6-24 18-24s18 10 14 24z" fill="#5c3a24"/>
+ <path d="M154 150c-1-9 4-15 12-15s12 6 10 15z" fill="#3f2818"/>
+
+ <path d="M396 196c14-2 26 2 30 12 4 10-4 18-16 16" fill="url(#pelo)"/>
+</svg>

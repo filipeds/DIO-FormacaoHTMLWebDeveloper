@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 620" role="img" aria-label="Mapa esquematico da America do Sul com a area de ocorrencia da capivara destacada">
+ <defs><clipPath id="continente"><path d="M121 60 L150 72 L182 76 L206 84 L230 99 L277 115 L293 155 L340 171 L395 194 L413 210 L403 234 L384 257 L376 297 L348 336 L309 352 L289 392 L261 423 L233 455 L190 478 L166 510 L147 550 L151 588 L103 574 L95 534 L103 487 L107 447 L123 392 L131 336 L131 297 L87 265 L64 218 L48 194 L52 171 L56 147 L76 123 L80 92 L103 68 Z"/></clipPath></defs>
+ <rect width="460" height="620" fill="#e8f1f6"/>
+ <path d="M121 60 L150 72 L182 76 L206 84 L230 99 L277 115 L293 155 L340 171 L395 194 L413 210 L403 234 L384 257 L376 297 L348 336 L309 352 L289 392 L261 423 L233 455 L190 478 L166 510 L147 550 L151 588 L103 574 L95 534 L103 487 L107 447 L123 392 L131 336 L131 297 L87 265 L64 218 L48 194 L52 171 L56 147 L76 123 L80 92 L103 68 Z" fill="#cfdbe3"/>
+ <g clip-path="url(#continente)"><path d="M130 78 L200 90 L245 110 L285 142 L330 174 L378 200 L388 232 L368 258 L360 298 L336 334 L300 352 L280 388 L256 418 L232 448 L205 452 L185 428 L168 388 L152 338 L142 292 L130 240 L122 190 L120 140 Z" fill="#8a5a3b" opacity=".8"/></g>
+ <path d="M121 60 L150 72 L182 76 L206 84 L230 99 L277 115 L293 155 L340 171 L395 194 L413 210 L403 234 L384 257 L376 297 L348 336 L309 352 L289 392 L261 423 L233 455 L190 478 L166 510 L147 550 L151 588 L103 574 L95 534 L103 487 L107 447 L123 392 L131 336 L131 297 L87 265 L64 218 L48 194 L52 171 L56 147 L76 123 L80 92 L103 68 Z" fill="none" stroke="#123c56" stroke-width="3" stroke-linejoin="round"/>
+
+ <g font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#1b2227">
+  <rect x="262" y="452" width="24" height="15" fill="#8a5a3b" opacity=".8"/>
+  <text x="294" y="465">&#193;rea de ocorr&#234;ncia</text>
+  <rect x="262" y="480" width="24" height="15" fill="#cfdbe3" stroke="#8fa3b2" stroke-width="2"/>
+  <text x="294" y="493">Demais regi&#245;es</text>
+  <text x="262" y="524" font-size="13" fill="#57646f">Mapa esquem&#225;tico,</text>
+  <text x="262" y="542" font-size="13" fill="#57646f">sem precis&#227;o cartogr&#225;fica.</text>
+ </g>
+</svg>
