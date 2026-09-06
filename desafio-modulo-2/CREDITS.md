@@ -2,16 +2,16 @@
 
 ## Ilustrações e logotipo
 
-Todos os arquivos SVG em `img/` (`logo.svg`, os quatro banners `header-*.svg` e os
+Todos os arquivos SVG em `assets/images/` (`logo.svg`, os quatro banners `header-*.svg` e os
 quatro ícones `esp-*.svg`) foram desenhados especificamente para este projeto de
 estudo. Não há material de terceiros neles.
 
-O vídeo `media/tour-clinica.mp4` e a imagem de pôster `img/tour-poster.jpg` foram
+O vídeo `assets/media/tour-clinica.mp4` e a imagem de pôster `assets/images/tour-poster.jpg` foram
 gerados a partir dessas mesmas ilustrações.
 
 ## Áudio
 
-`media/boas-vindas.mp3` é um trecho de 22 segundos da faixa **"Down the Way"**,
+`assets/media/boas-vindas.mp3` é um trecho de 22 segundos da faixa **"Down the Way"**,
 de **Jason Shaw**.
 
 - Crédito exigido pela licença: *music by audionautix.com*

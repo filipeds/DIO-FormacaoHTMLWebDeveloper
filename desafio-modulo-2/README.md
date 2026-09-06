@@ -1,7 +1,6 @@
-# Desafio de Projeto - Módulo 2: Clínica Vida Plena
+# Desafio de Projeto — Módulo 2: Site da Clínica Vida Plena
 
-Site de uma clínica médica multiespecialidades, criado para o Desafio de Projeto
-do Módulo 2 da trilha de HTML da **Digital Innovation One**.
+Site de quatro páginas de uma clínica médica multiespecialidades.
 
 > A clínica é fictícia. Nome, endereço, telefones, valores e profissionais foram
 > inventados para o exercício.
@@ -10,11 +9,11 @@ do Módulo 2 da trilha de HTML da **Digital Innovation One**.
 
 Criar um site "quase completo" de uma clínica médica, cobrindo os temas do
 módulo: **formulários**, **estruturação e formatação de texto**, **mídias** e
-**tabelas**. O menu de navegação deve levar a quatro páginas, e todas seguem o
-layout do `template.html` fornecido pela DIO (menu lateral + header, conteúdo e
-rodapé).
+**tabelas**. O menu de navegação deve levar a quatro páginas, todas seguindo o
+layout do `template.html` fornecido pela DIO — menu lateral com header, conteúdo
+e rodapé.
 
-## As páginas
+## O que foi feito
 
 | Arquivo | Página | O que traz |
 | --- | --- | --- |
@@ -24,59 +23,63 @@ rodapé).
 | `contato.html` | Contato | Telefones, endereço, mapa em `<iframe>` e formulário |
 
 Cada página tem uma **imagem diferente** no header. Menu e rodapé são idênticos
-nas quatro.
+nas quatro. O layout do template foi mantido, mas com tags semânticas sobre as
+classes originais, para que o CSS continue funcionando.
 
-## As duas tabelas
+### As duas tabelas
 
-O enunciado do desafio pede "uma tabela de **preços**, onde cada linha é um
-serviço, com o preço de cada um de acordo com os dias da semana" — mas a tabela
-de exemplo logo abaixo mostra **horários**, não preços.
+O enunciado pede "uma tabela de **preços**, onde cada linha é um serviço, com o
+preço de cada um de acordo com os dias da semana" — mas a tabela de exemplo logo
+abaixo mostra **horários**, não preços.
 
-Para não deixar nenhuma das duas leituras descoberta, a página `horarios.html`
-traz as duas: a tabela de horários exatamente como especificada no enunciado, e
-uma tabela de valores por serviço e dia da semana.
+Para não deixar nenhuma das duas leituras descoberta, `horarios.html` traz as
+duas: a tabela de horários exatamente como especificada no enunciado, e uma
+tabela de valores por serviço e dia da semana.
 
-## Recursos de HTML usados
+## Recursos usados
 
-- **Estrutura semântica:** `<nav>`, `<header>`, `<main>`, `<footer>`, `<address>`,
-  `<figure>` e `<figcaption>` — com as classes do template original, para que o
-  `base.css` continue funcionando.
+- **Estrutura semântica:** `<nav>`, `<header>`, `<main>`, `<footer>`,
+  `<address>`, `<figure>` e `<figcaption>`, com as classes do template original.
 - **Texto:** `<h1>`–`<h3>`, `<p>`, `<strong>`, `<em>`, `<small>`, `<cite>`,
-  `<blockquote>`, `<ul>` e `<ol>`.
-- **Mídias:** `<img>` (SVG), `<video>` com `poster` e `<audio>`, ambos com
+  `<ul>` e `<ol>`.
+- **Mídias:** `<img>` em SVG, `<video>` com `poster` e `<audio>`, ambos com
   `<source>` e conteúdo alternativo.
 - **Tabelas:** `<caption>`, `<thead>`, `<tbody>`, `<tfoot>`, `<th scope>` e
   `colspan`.
 - **Formulário:** `<form>`, `<fieldset>`, `<legend>`, `<label for>`, `input` dos
   tipos `text`, `email`, `radio` e `checkbox`, `<textarea>` e botões `submit` e
   `reset`.
-- **Outros:** `<iframe>` do Google Maps, links `tel:`, `mailto:` e WhatsApp.
+- **Outros:** `<iframe>` do Google Maps e links `tel:`, `mailto:` e WhatsApp.
 
 ## Estrutura de arquivos
 
 ```
 desafio-modulo-2/
-├── index.html          Página Principal
-├── sobre.html          Sobre a clínica
-├── horarios.html       Horário de Atendimento
-├── contato.html        Contato
-├── base.css            Adaptado do template da DIO
-├── CREDITS.md          Créditos das mídias
-├── img/                Logotipo, banners e ícones (SVG) + pôster do vídeo
-└── media/              Vídeo do tour e áudio de boas-vindas
+├── README.md
+├── CREDITS.md              Créditos das mídias
+├── index.html              Página Principal
+├── sobre.html              Sobre a clínica
+├── horarios.html           Horário de Atendimento
+├── contato.html            Contato
+└── assets/
+    ├── css/base.css        Adaptado do template da DIO
+    ├── images/             Logotipo, banners e ícones (SVG) + pôster do vídeo
+    └── media/              Vídeo do tour e áudio de boas-vindas
 ```
 
 ## Como visualizar
 
-Abra `index.html` em qualquer navegador. Não há build, dependências nem servidor.
+Abra `index.html` em qualquer navegador. Não há build, dependências nem
+servidor.
 
 O `<iframe>` do mapa precisa de conexão com a internet; o restante do site
-funciona offline.
+funciona offline. O formulário é uma demonstração: não há servidor por trás
+dele, portanto nenhuma mensagem é enviada ou armazenada.
 
-## Mídias
+## Créditos
 
 As ilustrações e o vídeo foram criados para este projeto. O áudio é uma faixa de
-licença livre com atribuição. Detalhes em [CREDITS.md](CREDITS.md).
+licença livre com atribuição obrigatória. Detalhes em [CREDITS.md](CREDITS.md).
 
 ## Referência
 
