@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 340" role="img" aria-label="Comparacao de tamanho, na mesma escala, entre uma pessoa de 1,70 metro de altura e uma capivara de 1,20 metro de comprimento por 0,60 metro de altura">
+ <line x1="20" y1="300" x2="600" y2="300" stroke="#57646f" stroke-width="3"/>
+
+ <g fill="#123c56">
+  <circle cx="120" cy="52" r="24"/>
+  <path d="M120 78c-30 0-46 20-46 48v96h20v78h18v-78h16v78h18v-78h20v-96c0-28-16-48-46-48z"/>
+ </g>
+
+ <g fill="#6b442a">
+  <rect x="346" y="262" width="17" height="38" rx="8"/>
+  <rect x="376" y="264" width="16" height="36" rx="8"/>
+  <rect x="432" y="262" width="17" height="38" rx="8"/>
+  <rect x="458" y="264" width="16" height="36" rx="8"/>
+ </g>
+ <ellipse cx="410" cy="238" rx="72" ry="34" fill="#8a5a3b"/>
+ <ellipse cx="314" cy="248" rx="26" ry="21" fill="#8a5a3b"/>
+ <circle cx="332" cy="214" r="8" fill="#6b442a"/>
+ <circle cx="303" cy="242" r="3.5" fill="#241610"/>
+ <ellipse cx="291" cy="252" rx="6" ry="5" fill="#4f3120"/>
+
+ <g stroke="#a2440b" stroke-width="2.5" fill="none">
+  <path d="M196 28v272M190 34l6-6 6 6M190 294l6 6 6-6"/>
+  <path d="M290 180h192M296 174l-6 6 6 6M476 174l6 6-6 6"/>
+  <path d="M506 204v96M500 210l6-6 6 6M500 294l6 6 6-6"/>
+ </g>
+
+ <g font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#1b2227">
+  <text x="206" y="170">1,70 m</text>
+  <text x="322" y="168">1,20 m de comprimento</text>
+  <text x="518" y="257">0,60 m</text>
+  <text x="20" y="326" font-size="14" fill="#57646f">Ambas as figuras est&#227;o na mesma escala.</text>
+ </g>
+</svg>
